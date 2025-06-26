@@ -1,10 +1,6 @@
-import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section id="home" className="min-h-screen relative overflow-hidden">
       {/* Animated Background */}
@@ -66,14 +62,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <button
-        onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-cyan-400 hover:text-cyan-300 transition-colors animate-bounce"
-      >
-        <ChevronDown size={32} />
-      </button>
     </section>
   );
 };
