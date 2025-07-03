@@ -66,19 +66,19 @@ const Projects = () => {
           {featuredProjects.map((project, index) => (
             <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
               <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                <div className="glass-dark rounded-2xl overflow-hidden hover-lift group">
+                <div className="glass-dark rounded-2xl overflow-hidden group">
                   <div className="aspect-video overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover transition-transform duration-300"
                     />
                   </div>
                 </div>
               </div>
               
               <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                <div className="glass-dark rounded-xl p-8 hover-lift">
+                <div className="glass-dark rounded-xl p-8">
                   <div className="mb-4">
                     <span className="text-cyan-400 text-sm">Featured Project</span>
                   </div>
@@ -118,12 +118,12 @@ const Projects = () => {
         {/* Other Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {otherProjects.map((project, index) => (
-            <div key={index} className="glass-dark rounded-xl overflow-hidden hover-lift group">
+            <div key={index} className="glass-dark rounded-xl overflow-hidden group">
               <div className="aspect-video overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
@@ -147,7 +147,7 @@ const Projects = () => {
                       <ExternalLink size={18} />
                     </a>
                   </div>
-                  <ArrowUpRight className="text-cyan-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={18} />
+                  <ArrowUpRight className="text-cyan-400 transition-transform" size={18} />
                 </div>
               </div>
             </div>

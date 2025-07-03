@@ -84,10 +84,10 @@ const Skills = () => {
             {skillCategories.map((category, index) => {
               const Icon = category.icon;
               return (
-                <div key={index} className="glass-dark-terminal rounded-xl p-6 hover-lift group flex flex-col border border-cyan-400/20 hover:border-cyan-400/50 transition-colors duration-300">
+                <div key={index} className="glass-dark-terminal rounded-xl p-6 group flex flex-col border border-cyan-400/20 hover:border-cyan-400/50 transition-colors duration-300">
                   <div className="flex-shrink-0 mb-6 flex items-center gap-4">
                     <div className="w-12 h-12 flex items-center justify-center rounded-md bg-cyan-900/50 border border-cyan-400/30">
-                       <Icon className="w-6 h-6 text-cyan-400 transition-transform duration-300 group-hover:scale-110 glitch-target" />
+                       <Icon className="w-6 h-6 text-cyan-400 transition-transform duration-300 glitch-target" />
                     </div>
                     <div>
                         <h3 className="text-xl font-bold text-white">{category.title}</h3>

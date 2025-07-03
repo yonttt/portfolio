@@ -49,7 +49,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Code className="h-8 w-8 text-cyan-400" />
             <span className="ml-2 text-xl font-bold text-white">
-              Alex<span className="text-cyan-400">.</span>dev
+              Yonathan<span className="text-cyan-400">.</span>dev
             </span>
           </div>
 

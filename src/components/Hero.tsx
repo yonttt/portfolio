@@ -2,23 +2,20 @@ import { Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 gradient-animated"></div>
-      
+    <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
       {/* Floating 3D Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-20 h-20 glass rotate-45 float-animation opacity-20"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 glass rounded-full float-animation opacity-30" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-40 left-20 w-24 h-24 glass rotate-12 float-animation opacity-25" style={{ animationDelay: '4s' }}></div>
-        <div className="absolute bottom-20 right-10 w-12 h-12 glass rounded-full float-animation opacity-20" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-20 left-10 w-20 h-20 glass rotate-45 opacity-20"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 glass rounded-full opacity-30"></div>
+        <div className="absolute bottom-40 left-20 w-24 h-24 glass rotate-12 opacity-25"></div>
+        <div className="absolute bottom-20 right-10 w-12 h-12 glass rounded-full opacity-20"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-screen">
         <div className="w-full">
           <div className="text-center lg:text-left">
-            <div className="glass-dark rounded-2xl p-8 md:p-12 max-w-4xl mx-auto lg:mx-0 hover-lift">
+            <div className="glass-dark rounded-2xl p-8 md:p-12 max-w-4xl mx-auto lg:mx-0">
               <div className="mb-6">
                 <span className="inline-block px-4 py-2 rounded-full bg-cyan-400/10 text-cyan-400 text-sm mb-4">
                   Full Stack Developer
@@ -27,7 +24,7 @@ const Hero = () => {
               
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
                 <span className="text-white">Hi, I'm </span>
-                <span className="text-gradient">Alex Chen</span>
+                <span className="text-gradient">Yonathan Marcello</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
@@ -48,13 +45,13 @@ const Hero = () => {
               </div>
               
               <div className="flex gap-6 justify-center lg:justify-start">
-                <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors hover:scale-110 transform duration-300">
+                <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <Github size={24} />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors hover:scale-110 transform duration-300">
+                <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <Linkedin size={24} />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors hover:scale-110 transform duration-300">
+                <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <Mail size={24} />
                 </a>
               </div>

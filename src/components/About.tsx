@@ -45,7 +45,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="glass-dark rounded-2xl p-8 hover-lift">
+            <div className="glass-dark rounded-2xl p-8">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 With over 5 years of experience in full-stack development, I specialize in 
                 building modern web applications using cutting-edge technologies like React, 
@@ -70,7 +70,7 @@ const About = () => {
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <div key={index} className="glass-dark rounded-xl p-6 hover-lift group">
+                <div key={index} className="glass-dark rounded-xl p-6 group">
                   <div className="mb-4">
                     <div className="w-12 h-12 bg-cyan-400/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-400/20 transition-colors">
                       <Icon className="w-6 h-6 text-cyan-400" />

@@ -8,14 +8,14 @@ const Footer = () => {
           <div className="flex items-center mb-4 md:mb-0">
             <Code className="h-6 w-6 text-cyan-400 mr-2" />
             <span className="text-white font-bold">
-              Alex<span className="text-cyan-400">.</span>dev
+              Yonathan<span className="text-cyan-400">.</span>dev
             </span>
           </div>
           
           <div className="flex items-center text-gray-400">
             <span>Made with</span>
             <Heart className="h-4 w-4 text-red-500 mx-2 fill-current" />
-            <span>by Alex Chen © 2024</span>
+            <span>by Yonathan Marcello © 2024</span>
           </div>
         </div>
       </div>
