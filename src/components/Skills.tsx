@@ -25,7 +25,7 @@ const Skills = () => {
       icon: Code,
       title: 'Software & Website Development',
       description: 'Development environments, mobile apps, and project management tools.',
-      skills: ['Android Studio', 'VS Code', 'Figma', 'Git/GitHub', 'Project Management', 'Testing & Debugging']
+      skills: ['Android Studio', 'VS Code', 'NetBeans', 'Git/GitHub', 'Project Management', 'Testing & Debugging']
     }
   ];
 
@@ -65,9 +65,9 @@ const Skills = () => {
   return (
     <>
       <style>{styles}</style>
-      <section id="skills" className="py-20 bg-black relative overflow-hidden">
+      <section id="skills" className="py-20 relative overflow-hidden">
         {/* Background CRT screen effect */}
-        <div className="absolute inset-0 bg-black bg-opacity-50" style={{ backgroundImage: 'linear-gradient(rgba(18, 18, 18, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.03))', backgroundSize: '100% 4px, 6px 100%' }}></div>
+        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'linear-gradient(rgba(18, 18, 18, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.03))', backgroundSize: '100% 4px, 6px 100%' }}></div>
         <div className="absolute inset-0 z-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle, rgba(0, 255, 255, 0.1) 1px, transparent 1px)', backgroundSize: '2rem 2rem' }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

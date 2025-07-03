@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+    <section id="home" className="min-h-screen relative overflow-hidden">
       {/* Floating 3D Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-20 h-20 glass rotate-45 opacity-20"></div>
@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-screen">
         <div className="w-full">
           <div className="text-center lg:text-left">
-            <div className="glass-dark rounded-2xl p-8 md:p-12 max-w-4xl mx-auto lg:mx-0">
+            <div className="glass-dark rounded-2xl p-8 md:p-12 max-w-4xl mx-auto lg:mx-0 border border-cyan-400/20 hover:border-cyan-400/40 transition-colors duration-300">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
                 <span className="text-white">Hi, I'm </span>
                 <span className="text-gradient">Yonathan Marcello</span>

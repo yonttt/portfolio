@@ -43,12 +43,11 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass-dark">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass-dark border-b border-cyan-400/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Code className="h-8 w-8 text-cyan-400" />
-            <span className="ml-2 text-xl font-bold text-white">
+            <span className="text-xl font-bold text-white">
               Yonttt
             </span>
           </div>

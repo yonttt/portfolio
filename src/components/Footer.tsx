@@ -1,12 +1,9 @@
-import { Code } from 'lucide-react';
-
 const Footer = () => {
   return (
-    <footer className="bg-black border-t border-gray-800">
+    <footer className="bg-black border-t border-cyan-400/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-4 md:mb-0">
-            <Code className="h-6 w-6 text-cyan-400 mr-2" />
             <span className="text-white font-bold">
               Yonttt
             </span>

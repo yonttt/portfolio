@@ -25,7 +25,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-black relative overflow-hidden">
+    <section id="about" className="py-20 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 right-10 w-32 h-32 glass rounded-full opacity-10 float-animation"></div>
@@ -45,7 +45,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="glass-dark rounded-2xl p-8">
+            <div className="glass-dark rounded-2xl p-8 border border-cyan-400/20 hover:border-cyan-400/40 transition-colors duration-300">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 Hi! My name is Yonathan Marcello S. Tambani, and I'm currently a student at 
                 President University, where I'm pursuing a major in Information Technology.
@@ -69,7 +69,7 @@ const About = () => {
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <div key={index} className="glass-dark rounded-xl p-6 group">
+                <div key={index} className="glass-dark rounded-xl p-6 group border border-cyan-400/20 hover:border-cyan-400/40 transition-colors duration-300">
                   <div className="mb-4">
                     <div className="w-12 h-12 bg-cyan-400/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-400/20 transition-colors">
                       <Icon className="w-6 h-6 text-cyan-400" />

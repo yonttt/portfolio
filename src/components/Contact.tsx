@@ -80,7 +80,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-950 relative overflow-hidden">
+    <section id="contact" className="py-20 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 glass rounded-full opacity-10 float-animation"></div>
@@ -101,7 +101,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="glass-dark rounded-xl p-8">
+            <div className="glass-dark rounded-xl p-8 border border-cyan-400/20 hover:border-cyan-400/40 transition-colors duration-300">
               <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3>
               <p className="text-gray-300 mb-8 leading-relaxed">
                 I'm always open to connecting with new people and discussing various topics.
@@ -151,7 +151,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-dark rounded-xl p-8">
+          <div className="glass-dark rounded-xl p-8 border border-cyan-400/20 hover:border-cyan-400/40 transition-colors duration-300">
             <h3 className="text-2xl font-bold text-white mb-6">Send Message</h3>
             <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                 {/* Add this hidden input. It will be sent automatically. */}
@@ -171,7 +171,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                    className="w-full px-4 py-3 bg-gray-900 border border-cyan-400/30 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
                     placeholder="John Doe"
                     required
                     disabled={status === 'sending'}
@@ -187,7 +187,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                    className="w-full px-4 py-3 bg-gray-900 border border-cyan-400/30 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
                     placeholder="john@example.com"
                     required
                     disabled={status === 'sending'}
@@ -205,7 +205,7 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-900 border border-cyan-400/30 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
                   placeholder="Subject of your message"
                   required
                   disabled={status === 'sending'}
@@ -222,7 +222,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={6}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-gray-900 border border-cyan-400/30 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors resize-none"
                   placeholder="Write your message here..."
                   required
                   disabled={status === 'sending'}
