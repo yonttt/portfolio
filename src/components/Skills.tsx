@@ -1,31 +1,31 @@
-import { Swords, ShieldCheck, Fingerprint, HardHat } from 'lucide-react';
+import { Server, Monitor, Shield, Code } from 'lucide-react';
 
 const Skills = () => {
-  // --- Data tailored for a Cybersecurity professional ---
+  // --- Data tailored for a student learning multiple tech areas ---
   const skillCategories = [
     {
-      icon: Swords,
-      title: 'Offensive Security',
-      description: 'Identifying and exploiting vulnerabilities to assess and improve security posture.',
-      skills: ['Penetration Testing', 'Nmap', 'Metasploit', 'Burp Suite', 'Wireshark', 'Python Scripting']
+      icon: Server,
+      title: 'Backend Development',
+      description: 'Server-side programming with Node.js, Python, Java, and database management.',
+      skills: ['Node.js', 'Python', 'Java', 'Firebase', 'MySQL', 'PHP']
     },
     {
-      icon: ShieldCheck,
-      title: 'Defensive Security',
-      description: 'Protecting systems and networks from threats and responding to incidents.',
-      skills: ['SIEM (Splunk/ELK)', 'Firewall & IDS/IPS', 'Threat Intelligence', 'Malware Analysis', 'Blue Teaming']
+      icon: Monitor,
+      title: 'Frontend Development',
+      description: 'Building interactive user interfaces with modern frameworks and styling libraries.',
+      skills: ['HTML/CSS', 'JavaScript', 'React', 'TypeScript', 'Tailwind CSS', 'Vite']
     },
     {
-      icon: Fingerprint,
-      title: 'Digital Forensics',
-      description: 'Investigating cybercrimes and security incidents by collecting and analyzing digital evidence.',
-      skills: ['Incident Response', 'Volatility', 'Autopsy/FTK', 'Memory Forensics', 'Log Analysis', 'Chain of Custody']
+      icon: Shield,
+      title: 'Cybersecurity',
+      description: 'Digital forensics, penetration testing, and open source intelligence gathering.',
+      skills: ['Autopsy', 'Burp Suite', 'Kali Linux', 'FTK Imager', 'Google Dorking', 'Open Source Intelligence']
     },
     {
-      icon: HardHat,
-      title: 'Security Engineering',
-      description: 'Designing, building, and maintaining secure systems and infrastructure.',
-      skills: ['Secure Architecture', 'Cloud Security (AWS/Azure)', 'Cryptography', 'Docker & Kubernetes', 'CI/CD Security']
+      icon: Code,
+      title: 'Software & Website Development',
+      description: 'Development environments, mobile apps, and project management tools.',
+      skills: ['Android Studio', 'VS Code', 'Figma', 'Git/GitHub', 'Project Management', 'Testing & Debugging']
     }
   ];
 
@@ -73,10 +73,10 @@ const Skills = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              <span className='text-cyan-400'></span>_OPERATIVE SKILLSET<span className="cursor-blink">|</span>
+              My <span className="text-gradient">Skills</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Core competencies in digital threat assessment and infrastructure defense.
+              Technologies and areas I'm passionate about and continuously learning.
             </p>
           </div>
 
@@ -91,7 +91,6 @@ const Skills = () => {
                     </div>
                     <div>
                         <h3 className="text-xl font-bold text-white">{category.title}</h3>
-                        <p className="text-xs text-gray-400">EXEC_DOMAIN_{index + 1}</p>
                     </div>
                   </div>
                   <p className='text-gray-400 mb-6 text-sm'>{category.description}</p>

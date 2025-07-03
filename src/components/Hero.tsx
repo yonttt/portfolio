@@ -16,20 +16,13 @@ const Hero = () => {
         <div className="w-full">
           <div className="text-center lg:text-left">
             <div className="glass-dark rounded-2xl p-8 md:p-12 max-w-4xl mx-auto lg:mx-0">
-              <div className="mb-6">
-                <span className="inline-block px-4 py-2 rounded-full bg-cyan-400/10 text-cyan-400 text-sm mb-4">
-                  Full Stack Developer
-                </span>
-              </div>
-              
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
                 <span className="text-white">Hi, I'm </span>
                 <span className="text-gradient">Yonathan Marcello</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
-                I craft beautiful, functional, and user-centered digital experiences 
-                with modern technologies and creative problem-solving.
+                An aspiring developer with growing knowledge in cybersecurity, coding, and website development.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -45,13 +38,13 @@ const Hero = () => {
               </div>
               
               <div className="flex gap-6 justify-center lg:justify-start">
-                <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                <a href="https://github.com/yonttt" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <Github size={24} />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                <a href="https://www.linkedin.com/in/yonathan-marcello-8392451b3/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <Linkedin size={24} />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                <a href="#contact" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <Mail size={24} />
                 </a>
               </div>

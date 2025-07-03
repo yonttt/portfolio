@@ -1,26 +1,26 @@
-import { Code2, Zap, Users, Award } from 'lucide-react';
+import { Shield, Code2, Globe, GraduationCap } from 'lucide-react';
 
 const About = () => {
   const features = [
     {
+      icon: Shield,
+      title: 'Cybersecurity',
+      description: 'Focused on protection and analysis, including OSINT techniques and digital threat assessment.'
+    },
+    {
       icon: Code2,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable, and efficient code following best practices.'
+      title: 'Coding',
+      description: 'Developing programming skills in various languages and building practical applications.'
     },
     {
-      icon: Zap,
-      title: 'Fast Performance',
-      description: 'Optimized applications with lightning-fast load times and smooth interactions.'
+      icon: Globe,
+      title: 'Website Development',
+      description: 'Creating modern, responsive websites and learning web technologies and frameworks.'
     },
     {
-      icon: Users,
-      title: 'User-Centered',
-      description: 'Designing intuitive interfaces that prioritize user experience and accessibility.'
-    },
-    {
-      icon: Award,
-      title: 'Quality Focused',
-      description: 'Delivering high-quality solutions with attention to detail and thorough testing.'
+      icon: GraduationCap,
+      title: 'Continuous Learning',
+      description: 'Always eager to expand knowledge and stay updated with the latest technology trends.'
     }
   ];
 
@@ -38,8 +38,8 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Passionate about creating innovative solutions that bridge the gap between 
-            design and technology.
+            Get to know more about my background, interests, and what drives my passion 
+            for technology and learning.
           </p>
         </div>
 
@@ -47,17 +47,16 @@ const About = () => {
           <div className="space-y-6">
             <div className="glass-dark rounded-2xl p-8">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                With over 5 years of experience in full-stack development, I specialize in 
-                building modern web applications using cutting-edge technologies like React, 
-                Node.js, and TypeScript.
+                Hi! My name is Yonathan Marcello S. Tambani, and I'm currently a student at 
+                President University, where I'm pursuing a major in Information Technology.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I believe in the power of clean, efficient code and user-centered design. 
-                My approach combines technical expertise with creative problem-solving to 
-                deliver exceptional digital experiences.
+                I am passionate about three main areas in technology: cybersecurity, coding, 
+                and website development. I'm constantly learning and exploring these fields 
+                to expand my knowledge and skills in the ever-evolving world of technology.
               </p>
               <div className="flex flex-wrap gap-3">
-                {['React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Docker'].map((tech) => (
+                {['Cybersecurity', 'Web Development', 'Programming', 'Information Technology'].map((tech) => (
                   <span key={tech} className="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm">
                     {tech}
                   </span>

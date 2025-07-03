@@ -1,4 +1,4 @@
-import { Code, Heart } from 'lucide-react';
+import { Code } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,14 +8,12 @@ const Footer = () => {
           <div className="flex items-center mb-4 md:mb-0">
             <Code className="h-6 w-6 text-cyan-400 mr-2" />
             <span className="text-white font-bold">
-              Yonathan<span className="text-cyan-400">.</span>dev
+              Yonttt
             </span>
           </div>
           
           <div className="flex items-center text-gray-400">
-            <span>Made with</span>
-            <Heart className="h-4 w-4 text-red-500 mx-2 fill-current" />
-            <span>by Yonathan Marcello © 2024</span>
+            <span>Made by Yonathan Marcello © 2025</span>
           </div>
         </div>
       </div>

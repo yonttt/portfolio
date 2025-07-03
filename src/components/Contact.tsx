@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Mail, Phone, MapPin, Send, Linkedin, Loader2, CheckCircle, XCircle, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Facebook, Loader2, CheckCircle, XCircle, Instagram } from 'lucide-react';
 
 // Custom TikTok icon component
 const TikTokIcon = ({ size = 18 }: { size?: number }) => (
@@ -68,7 +68,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Bekasi, Cikarang Utara',
+      value: 'Indonesia, Bekasi',
       href: '#'
     }
   ];
@@ -76,7 +76,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/ynthn_mrcll/', label: 'Instagram' },
     { icon: TikTokIcon, href: 'https://www.tiktok.com/@yonttt', label: 'TikTok' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/yonathan-marcello-8392451b3/', label: 'LinkedIn' }
+    { icon: Facebook, href: 'https://www.facebook.com/yonathan.marcello.3/?locale=id_ID', label: 'Facebook' }
   ];
 
   return (
@@ -90,11 +90,11 @@ const Contact = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Get In <span className="text-gradient">Touch</span>
+            Contact <span className="text-gradient">Me</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to start your next project? Let's discuss how we can work together
-            to bring your ideas to life.
+            Have a question or want to get in touch?
+            Feel free to reach out anytime.
           </p>
         </div>
 
@@ -102,11 +102,10 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="glass-dark rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">Let's Connect</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3>
               <p className="text-gray-300 mb-8 leading-relaxed">
-                I'm always interested in new opportunities and exciting projects.
-                Whether you're a company looking to hire, or you're a fellow developer
-                who wants to collaborate, I'd love to hear from you.
+                I'm always open to connecting with new people and discussing various topics.
+                don't hesitate to reach out.
               </p>
 
               <div className="space-y-6">
