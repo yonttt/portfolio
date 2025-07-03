@@ -3,6 +3,7 @@ import { Github } from 'lucide-react';
 // Import project images
 import presidentUniversityImg from '../assets/images/president-university-website.png';
 import bmiCalculatorImg from '../assets/images/bmi-calculator.png';
+import donationwebsiteImg from '../assets/images/donation-website.png';
 
 const Projects = () => {
   const projects = [
@@ -21,6 +22,15 @@ const Projects = () => {
       image: bmiCalculatorImg,
       tech: ['Java'],
       github: 'https://github.com/yonttt/bmicalculator',
+      live: '#',
+      featured: false
+    },
+    {
+      title: 'Donation Website',
+      description: 'A charitable donation platform where users can contribute to help people in need. Features include donation functionality and story sharing capabilities for donors to share their experiences after making donations.',
+      image: donationwebsiteImg,
+      tech: ['Typescript'],
+      github: 'https://github.com/yonttt/DPS.git',
       live: '#',
       featured: false
     },
@@ -43,7 +53,7 @@ const Projects = () => {
             My <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            A selection of projects that showcase my expertise in building modern web applications.
+            A collection of projects I've built while learning and developing my programming skills.
           </p>
         </div>
 
@@ -57,7 +67,7 @@ const Projects = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-contain bg-gradient-to-br from-gray-900 via-gray-800 to-black p-4 hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-contain bg-gradient-to-br from-gray-900 via-gray-800 to-black p-4 transition-transform duration-300"
                     />
                   </div>
                 </div>
@@ -102,7 +112,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-contain bg-gradient-to-br from-gray-900 via-gray-800 to-black p-3 hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-contain bg-gradient-to-br from-gray-900 via-gray-800 to-black p-3 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
