@@ -25,10 +25,10 @@ const Hero = () => {
                 An aspiring developer with growing knowledge in cybersecurity, coding, and website development.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 mb-8 items-center">
+              <div className="flex flex-col sm:flex-row gap-4 mb-8 items-center justify-center sm:justify-start">
                 {/* View My Work Button */}
-                <a href="#projects" className="w-full sm:w-auto flex justify-center">
-                    <button className="w-full sm:w-auto max-w-xs px-8 py-4 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-300 transition-all duration-300 btn-glow">
+                <a href="#projects" className="w-full sm:w-auto">
+                    <button className="w-full sm:w-auto px-8 py-4 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-300 transition-all duration-300 btn-glow text-center">
                     View My Work</button>
                 </a>
                 {/* Download CV Button */}
@@ -37,9 +37,9 @@ const Hero = () => {
                   download="Yonathan_Marcello_CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto flex justify-center"
+                  className="w-full sm:w-auto"
                 >
-                  <button className="w-full sm:w-auto max-w-xs px-8 py-4 glass border border-cyan-400/30 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition-all duration-300 flex items-center justify-center gap-2 btn-glow">
+                  <button className="w-full sm:w-auto px-8 py-4 glass border border-cyan-400/30 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition-all duration-300 flex items-center justify-center gap-2 btn-glow text-center">
                     <Download size={20} />
                     Download CV
                   </button>
