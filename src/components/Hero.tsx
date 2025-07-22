@@ -31,10 +31,17 @@ const Hero = () => {
                     <button className="px-8 py-4 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-300 transition-all duration-300 btn-glow">
                     View My Work</button>
                 </a>
-                <button className="px-8 py-4 glass border border-cyan-400/30 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition-all duration-300 flex items-center justify-center gap-2">
-                  <Download size={20} />
-                  Download CV
-                </button>
+                <a 
+                  href="/assets/Yonathan_Marcello_CV.pdf" 
+                  download="Yonathan_Marcello_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-8 py-4 glass border border-cyan-400/30 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition-all duration-300 flex items-center justify-center gap-2 btn-glow">
+                    <Download size={20} />
+                    Download CV
+                  </button>
+                </a>
               </div>
               
               <div className="flex gap-6 justify-center lg:justify-start">
