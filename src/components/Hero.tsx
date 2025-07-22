@@ -27,8 +27,8 @@ const Hero = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 {/* Wrap the button in an anchor tag */}
-                <a href="#projects">
-                    <button className="px-8 py-4 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-300 transition-all duration-300 btn-glow">
+                <a href="#projects" className="w-full sm:w-auto">
+                    <button className="w-full sm:w-auto px-8 py-4 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-300 transition-all duration-300 btn-glow">
                     View My Work</button>
                 </a>
                 <a 
@@ -36,8 +36,9 @@ const Hero = () => {
                   download="Yonathan_Marcello_CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
                 >
-                  <button className="px-8 py-4 glass border border-cyan-400/30 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition-all duration-300 flex items-center justify-center gap-2 btn-glow">
+                  <button className="w-full sm:w-auto px-8 py-4 glass border border-cyan-400/30 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition-all duration-300 flex items-center justify-center gap-2 btn-glow">
                     <Download size={20} />
                     Download CV
                   </button>
