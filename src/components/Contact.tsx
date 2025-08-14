@@ -81,10 +81,14 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
-      {/* Background Elements */}
+      {/* Floating 3D Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-32 h-32 glass rounded-full opacity-10 float-animation"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 glass rounded-full opacity-15 float-animation"></div>
         <div className="absolute bottom-20 right-20 w-24 h-24 glass rotate-45 opacity-10 float-animation" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute top-60 right-10 w-20 h-20 glass rotate-12 opacity-12 float-animation" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-60 left-20 w-16 h-16 glass rounded-full opacity-8 float-animation" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-40 left-1/2 w-18 h-18 glass rotate-45 opacity-14 float-animation" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-40 right-1/3 w-26 h-26 glass rounded-full opacity-9 float-animation" style={{ animationDelay: '5s' }}></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

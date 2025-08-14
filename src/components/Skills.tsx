@@ -66,6 +66,16 @@ const Skills = () => {
     <>
       <style>{styles}</style>
       <section id="skills" className="py-20 relative overflow-hidden">
+        {/* Floating 3D Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-24 h-24 glass rotate-45 opacity-15 float-animation"></div>
+          <div className="absolute top-40 right-20 w-32 h-32 glass rounded-full opacity-20 float-animation" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-60 left-20 w-16 h-16 glass rotate-12 opacity-10 float-animation" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute bottom-40 right-10 w-20 h-20 glass rounded-full opacity-15 float-animation" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-60 left-1/2 w-14 h-14 glass rotate-45 opacity-12 float-animation" style={{ animationDelay: '3s' }}></div>
+          <div className="absolute bottom-20 left-1/3 w-28 h-28 glass rounded-full opacity-8 float-animation" style={{ animationDelay: '5s' }}></div>
+        </div>
+
         {/* Background CRT screen effect */}
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'linear-gradient(rgba(18, 18, 18, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.03))', backgroundSize: '100% 4px, 6px 100%' }}></div>
         <div className="absolute inset-0 z-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle, rgba(0, 255, 255, 0.1) 1px, transparent 1px)', backgroundSize: '2rem 2rem' }}></div>
