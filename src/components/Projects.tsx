@@ -1,4 +1,5 @@
 import { Github } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 // Import project images
 import presidentUniversityImg from '../assets/images/president-university-website.png';
@@ -6,6 +7,35 @@ import bmiCalculatorImg from '../assets/images/bmi-calculator.png';
 import donationwebsiteImg from '../assets/images/donation-website.png';
 
 const Projects = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!sectionRef.current) return;
+      
+      const { clientX, clientY } = e;
+      const { innerWidth, innerHeight } = window;
+      
+      const xPercent = (clientX / innerWidth - 0.5) * 2;
+      const yPercent = (clientY / innerHeight - 0.5) * 2;
+      
+      const elements = sectionRef.current.querySelectorAll('.interactive-3d');
+      elements.forEach((element, index) => {
+        const intensity = (index + 1) * 0.6;
+        const x = xPercent * intensity * 12;
+        const y = yPercent * intensity * 12;
+        const rotateX = yPercent * intensity * 4;
+        const rotateY = xPercent * intensity * 4;
+        
+        (element as HTMLElement).style.transform = 
+          `translate(${x}px, ${y}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+    return () => document.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   const projects = [
     {
       title: 'President University Website',
@@ -40,11 +70,14 @@ const Projects = () => {
   const otherProjects = projects.filter(p => !p.featured);
 
   return (
-    <section id="projects" className="py-20 relative overflow-hidden">
-      {/* Background Elements */}
+    <section ref={sectionRef} id="projects" className="py-20 relative overflow-hidden">
+      {/* Interactive 3D Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-40 right-10 w-36 h-36 glass rounded-full opacity-5 float-animation"></div>
-        <div className="absolute bottom-40 left-10 w-20 h-20 glass rotate-45 opacity-5 float-animation" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-40 right-10 w-36 h-36 glass rounded-full opacity-5 float-animation interactive-3d transition-transform duration-300"></div>
+        <div className="absolute bottom-40 left-10 w-20 h-20 glass rotate-45 opacity-5 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-20 left-20 w-24 h-24 glass rotate-12 opacity-8 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-60 right-1/3 w-28 h-28 glass rounded-full opacity-6 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute top-80 left-1/2 w-16 h-16 glass rotate-45 opacity-7 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
