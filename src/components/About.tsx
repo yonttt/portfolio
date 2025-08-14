@@ -103,14 +103,14 @@ const About = () => {
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <div key={index} className="glass-dark rounded-xl p-6 group border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-500 card-3d hover-lift transform-3d">
+                <div key={index} className="glass-dark rounded-xl p-6 group border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-500 card-3d hover-lift transform-3d hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/20">
                   <div className="mb-4">
                     <div className="w-12 h-12 bg-cyan-400/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-12">
-                      <Icon className="w-6 h-6 text-cyan-400" />
+                      <Icon className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
-                  <p className="text-gray-400">{feature.description}</p>
+                  <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">{feature.title}</h3>
+                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">{feature.description}</p>
                 </div>
               );
             })}

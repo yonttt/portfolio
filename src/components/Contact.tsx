@@ -133,7 +133,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="glass-dark rounded-xl p-8 border border-cyan-400/20 hover:border-cyan-400/40 transition-colors duration-300">
+            <div className="glass-dark rounded-xl p-8 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/20">
               <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3>
               <p className="text-gray-300 mb-8 leading-relaxed">
                 I'm always open to connecting with new people and discussing various topics.
@@ -147,13 +147,13 @@ const Contact = () => {
                     <a
                       key={index}
                       href={info.href}
-                      className="flex items-center gap-4 text-gray-300 hover:text-cyan-400 transition-colors group"
+                      className="flex items-center gap-4 text-gray-300 hover:text-cyan-400 transition-all duration-300 group hover:translate-x-2 hover:scale-105"
                     >
-                      <div className="w-12 h-12 bg-cyan-400/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-400/20 transition-colors">
+                      <div className="w-12 h-12 bg-cyan-400/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
                         <Icon className="w-5 h-5 text-cyan-400" />
                       </div>
                       <div>
-                        <p className="font-semibold text-white">{info.label}</p>
+                        <p className="font-semibold text-white group-hover:text-cyan-400 transition-colors duration-300">{info.label}</p>
                         <p className="text-sm">{info.value}</p>
                       </div>
                     </a>
@@ -170,7 +170,7 @@ const Contact = () => {
                       <a
                         key={index}
                         href={social.href}
-                        className="w-10 h-10 bg-cyan-400/10 rounded-lg flex items-center justify-center text-cyan-400 hover:bg-cyan-400/20 transition-colors"
+                        className="w-10 h-10 bg-cyan-400/10 rounded-lg flex items-center justify-center text-cyan-400 hover:bg-cyan-400/20 transition-all duration-300 hover:scale-125 hover:rotate-12 hover:-translate-y-1"
                         aria-label={social.label}
                       >
                         <Icon size={18} />
@@ -183,7 +183,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-dark rounded-xl p-8 border border-cyan-400/20 hover:border-cyan-400/40 transition-colors duration-300">
+          <div className="glass-dark rounded-xl p-8 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/20">
             <h3 className="text-2xl font-bold text-white mb-6">Send Message</h3>
             <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                 {/* Add this hidden input. It will be sent automatically. */}
@@ -275,7 +275,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-cyan-400 text-black font-semibold py-4 px-6 rounded-lg hover:bg-cyan-300 transition-all duration-300 btn-glow flex items-center justify-center gap-2 disabled:bg-gray-600 disabled:cursor-not-allowed"
+                className="w-full bg-cyan-400 text-black font-semibold py-4 px-6 rounded-lg hover:bg-cyan-300 transition-all duration-300 btn-glow flex items-center justify-center gap-2 disabled:bg-gray-600 disabled:cursor-not-allowed hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-400/30"
                 disabled={status === 'sending'}
               >
                 {status === 'sending' ? (

@@ -124,27 +124,27 @@ const Skills = () => {
             {skillCategories.map((category, index) => {
               const Icon = category.icon;
               return (
-                <div key={index} className="glass-dark-terminal rounded-xl p-6 group flex flex-col border border-cyan-400/20 hover:border-cyan-400/50 transition-colors duration-300">
+                <div key={index} className="glass-dark-terminal rounded-xl p-6 group flex flex-col border border-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/20">
                   <div className="flex-shrink-0 mb-6 flex items-center gap-4">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-md bg-cyan-900/50 border border-cyan-400/30">
-                       <Icon className="w-6 h-6 text-cyan-400 transition-transform duration-300 glitch-target" />
+                    <div className="w-12 h-12 flex items-center justify-center rounded-md bg-cyan-900/50 border border-cyan-400/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                       <Icon className="w-6 h-6 text-cyan-400 transition-transform duration-300 glitch-target group-hover:scale-110" />
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold text-white">{category.title}</h3>
+                        <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">{category.title}</h3>
                     </div>
                   </div>
-                  <p className='text-gray-400 mb-6 text-sm'>{category.description}</p>
+                  <p className='text-gray-400 mb-6 text-sm group-hover:text-gray-300 transition-colors duration-300'>{category.description}</p>
                   
                   {/* --- Animated Skills List --- */}
                   <div className="flex-grow flex flex-col space-y-2">
                     {category.skills.map((skill, skillIndex) => (
                       <div 
                         key={skillIndex} 
-                        className="fade-in-skill" 
+                        className="fade-in-skill group-hover:translate-x-1 transition-transform duration-300" 
                         style={{ animationDelay: `${skillIndex * 100}ms` }}
                       >
-                        <p className="text-gray-300">
-                          <span className="text-cyan-400 mr-2">[+]</span>{skill}
+                        <p className="text-gray-300 group-hover:text-white transition-colors duration-300">
+                          <span className="text-cyan-400 mr-2 group-hover:text-cyan-300 transition-colors duration-300">[+]</span>{skill}
                         </p>
                       </div>
                     ))}

@@ -64,14 +64,49 @@
 /* Modern 3D Card Effects */
 .card-3d {
   transform-style: preserve-3d;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card-3d:hover {
-  transform: translateY(-8px) rotateX(5deg) rotateY(5deg);
+  transform: translateY(-8px) rotateX(5deg) rotateY(5deg) scale(1.02);
   box-shadow: 
-    0 20px 40px rgba(0, 255, 255, 0.1),
-    0 0 30px rgba(0, 255, 255, 0.05);
+    0 25px 50px rgba(0, 255, 255, 0.15),
+    0 0 40px rgba(0, 255, 255, 0.08),
+    0 0 0 1px rgba(0, 255, 255, 0.1);
+}
+
+/* Enhanced project card hover effects */
+.project-card-hover {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+}
+
+.project-card-hover:hover {
+  transform: translateY(-12px) scale(1.03) rotateX(3deg) rotateY(2deg);
+  box-shadow: 
+    0 30px 60px rgba(0, 255, 255, 0.2),
+    0 0 50px rgba(0, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Contact info hover effects */
+.contact-item-hover {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-item-hover:hover {
+  transform: translateX(8px) translateY(-2px) scale(1.02);
+}
+
+/* Social icon 3D effects */
+.social-icon-3d {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+}
+
+.social-icon-3d:hover {
+  transform: scale(1.2) rotateZ(15deg) translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
 }
 
 /* Glassmorphism utilities */
