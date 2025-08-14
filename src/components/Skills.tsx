@@ -122,7 +122,7 @@ const Skills = () => {
               return (
                 <div key={index} className="glass-dark-terminal rounded-xl p-6 group flex flex-col border border-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/20">
                   <div className="flex-shrink-0 mb-6 flex items-center gap-4">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-md bg-cyan-900/50 border border-cyan-400/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                    <div className="w-12 h-12 flex items-center justify-center rounded-md bg-cyan-900/50 border border-cyan-400/30 group-hover:scale-110 transition-all duration-300">
                        <Icon className="w-6 h-6 text-cyan-400 transition-transform duration-300 glitch-target group-hover:scale-110" />
                     </div>
                     <div>

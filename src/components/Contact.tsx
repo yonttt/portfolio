@@ -145,7 +145,7 @@ const Contact = () => {
                       href={info.href}
                       className="flex items-center gap-4 text-gray-300 hover:text-cyan-400 transition-all duration-300 group hover:translate-x-2 hover:scale-105"
                     >
-                      <div className="w-12 h-12 bg-cyan-400/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+                      <div className="w-12 h-12 bg-cyan-400/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300 group-hover:scale-110">
                         <Icon className="w-5 h-5 text-cyan-400" />
                       </div>
                       <div>
@@ -166,7 +166,7 @@ const Contact = () => {
                       <a
                         key={index}
                         href={social.href}
-                        className="w-10 h-10 bg-cyan-400/10 rounded-lg flex items-center justify-center text-cyan-400 hover:bg-cyan-400/20 transition-all duration-300 hover:scale-125 hover:rotate-12 hover:-translate-y-1"
+                        className="w-10 h-10 bg-cyan-400/10 rounded-lg flex items-center justify-center text-cyan-400 hover:bg-cyan-400/20 transition-all duration-300 hover:scale-125 hover:-translate-y-1"
                         aria-label={social.label}
                       >
                         <Icon size={18} />

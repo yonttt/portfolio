@@ -87,7 +87,7 @@ const About = () => {
               </p>
               <div className="flex flex-wrap gap-3">
                 {['Programming', 'Web Development', 'Cybersecurity', 'Information Technology'].map((tech) => (
-                  <span key={tech} className="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm hover:bg-cyan-400/20 transition-all duration-300 transform hover:scale-105 hover:rotate-1">
+                  <span key={tech} className="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm hover:bg-cyan-400/20 transition-all duration-300 transform hover:scale-105">
                     {tech}
                   </span>
                 ))}
@@ -101,7 +101,7 @@ const About = () => {
               return (
                 <div key={index} className="glass-dark rounded-xl p-6 group border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-500 card-3d hover-lift transform-3d hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/20">
                   <div className="mb-4">
-                    <div className="w-12 h-12 bg-cyan-400/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-12">
+                    <div className="w-12 h-12 bg-cyan-400/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300 transform group-hover:scale-110">
                       <Icon className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
                     </div>
                   </div>
