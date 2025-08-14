@@ -55,10 +55,10 @@ const About = () => {
       {/* Interactive 3D Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 right-10 w-32 h-32 glass rounded-full opacity-15 float-animation interactive-3d"></div>
-        <div className="absolute bottom-20 left-10 w-24 h-24 glass rotate-45 opacity-10 float-animation interactive-3d" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute top-40 left-20 w-16 h-16 glass rotate-12 opacity-12 float-animation interactive-3d" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-20 left-10 w-24 h-24 glass opacity-10 float-animation interactive-3d" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute top-40 left-20 w-16 h-16 glass opacity-12 float-animation interactive-3d" style={{ animationDelay: '1s' }}></div>
         <div className="absolute bottom-60 right-20 w-20 h-20 glass rounded-full opacity-8 float-animation interactive-3d" style={{ animationDelay: '4s' }}></div>
-        <div className="absolute top-60 right-1/3 w-16 h-16 glass rotate-45 opacity-14 float-animation interactive-3d" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-60 right-1/3 w-16 h-16 glass opacity-14 float-animation interactive-3d" style={{ animationDelay: '2s' }}></div>
         <div className="absolute bottom-40 left-1/2 w-20 h-20 glass rounded-full opacity-9 float-animation interactive-3d" style={{ animationDelay: '5s' }}></div>
       </div>
 
