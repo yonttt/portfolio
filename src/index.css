@@ -5,23 +5,97 @@
   font-family: 'JetBrains Mono', monospace;
 }
 
+/* Modern 3D Loading Animations */
+@keyframes loading-progress {
+  0% { width: 0%; }
+  50% { width: 70%; }
+  100% { width: 100%; }
+}
+
+.animate-loading-progress {
+  animation: loading-progress 2s ease-in-out;
+}
+
+/* 3D Entrance Animations */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100px) rotateX(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100px) rotateY(-45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100px) rotateY(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn3D {
+  0% {
+    transform: scale(0.8) rotateX(20deg) rotateY(20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotateX(0deg) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/* Modern 3D Card Effects */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: translateY(-8px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 
+    0 20px 40px rgba(0, 255, 255, 0.1),
+    0 0 30px rgba(0, 255, 255, 0.05);
+}
+
 /* Glassmorphism utilities */
 .glass {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .glass-dark {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-/* 3D Transform utilities */
+/* Enhanced 3D Transform utilities */
 .transform-3d {
   transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .rotate-3d {
@@ -29,11 +103,11 @@
 }
 
 .hover-lift {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .hover-lift:hover {
-  transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  transform: translateY(-15px) rotateX(8deg) rotateY(8deg) scale(1.02);
 }
 
 /* Gradient animations */
@@ -49,24 +123,72 @@
   animation: gradient-shift 8s ease infinite;
 }
 
-/* Floating animation */
+/* Enhanced floating animation with 3D rotation */
 @keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(5deg); }
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg) rotateX(0deg) rotateY(0deg); 
+  }
+  33% { 
+    transform: translateY(-15px) rotate(2deg) rotateX(5deg) rotateY(2deg); 
+  }
+  66% { 
+    transform: translateY(-10px) rotate(-2deg) rotateX(-3deg) rotateY(-2deg); 
+  }
 }
 
 .float-animation {
   animation: float 6s ease-in-out infinite;
+  transform-style: preserve-3d;
 }
 
-/* Pulse animation for skills */
+/* Modern pulse animation with 3D glow */
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(0, 255, 255, 0.6); }
+  0%, 100% { 
+    box-shadow: 
+      0 0 20px rgba(0, 255, 255, 0.3),
+      0 0 40px rgba(0, 255, 255, 0.1),
+      inset 0 0 20px rgba(0, 255, 255, 0.05);
+  }
+  50% { 
+    box-shadow: 
+      0 0 40px rgba(0, 255, 255, 0.6),
+      0 0 80px rgba(0, 255, 255, 0.2),
+      inset 0 0 40px rgba(0, 255, 255, 0.1);
+    transform: scale(1.05);
+  }
 }
 
 .pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+/* Modern parallax scrolling effect */
+@keyframes parallax-float {
+  0%, 100% { transform: translateY(0px) translateZ(0px); }
+  50% { transform: translateY(-30px) translateZ(20px); }
+}
+
+.parallax-element {
+  animation: parallax-float 8s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+/* 3D Hover Effects for Interactive Elements */
+.interactive-hover {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+}
+
+.interactive-hover:hover {
+  transform: 
+    translateY(-8px) 
+    rotateX(10deg) 
+    rotateY(10deg) 
+    scale(1.05);
+  box-shadow: 
+    0 20px 40px rgba(0, 255, 255, 0.2),
+    0 0 30px rgba(0, 255, 255, 0.1);
 }
 
 /* Smooth scrolling */
