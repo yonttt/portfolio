@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="absolute top-40 right-20 w-16 h-16 glass rounded-full opacity-30 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '1s' }}></div>
         <div className="absolute bottom-40 left-20 w-24 h-24 glass rotate-12 opacity-25 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '2s' }}></div>
         <div className="absolute bottom-20 right-10 w-12 h-12 glass rounded-full opacity-20 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute top-60 left-1/2 w-18 h-18 glass rotate-45 opacity-15 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-60 left-1/2 w-16 h-16 glass rotate-45 opacity-15 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '4s' }}></div>
         <div className="absolute bottom-60 right-1/3 w-14 h-14 glass rounded-full opacity-25 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '5s' }}></div>
       </div>
 
