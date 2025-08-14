@@ -4,16 +4,16 @@ const Skills = () => {
   // --- Data tailored for a student learning multiple tech areas ---
   const skillCategories = [
     {
-      icon: Server,
-      title: 'Backend Development',
-      description: 'Server-side programming with Node.js, Python, Java, and database management.',
-      skills: ['Node.js', 'Python', 'Java', 'Firebase', 'MySQL', 'PHP']
+      icon: Code,
+      title: 'Programming',
+      description: 'Development environments, programming languages, and software development tools.',
+      skills: ['Python', 'Java', 'JavaScript', 'TypeScript', 'Node.js', 'Git/GitHub']
     },
     {
       icon: Monitor,
-      title: 'Frontend Development',
+      title: 'Website Development',
       description: 'Building interactive user interfaces with modern frameworks and styling libraries.',
-      skills: ['HTML/CSS', 'JavaScript', 'React', 'TypeScript', 'Tailwind CSS', 'Vite']
+      skills: ['HTML/CSS', 'React', 'Tailwind CSS', 'Vite', 'Firebase', 'MySQL']
     },
     {
       icon: Shield,
@@ -22,10 +22,10 @@ const Skills = () => {
       skills: ['Autopsy', 'Burp Suite', 'Kali Linux', 'FTK Imager', 'Google Dorking', 'Open Source Intelligence']
     },
     {
-      icon: Code,
-      title: 'Software & Website Development',
-      description: 'Development environments, mobile apps, and project management tools.',
-      skills: ['Android Studio', 'VS Code', 'NetBeans', 'Git/GitHub', 'Project Management', 'Testing & Debugging']
+      icon: Server,
+      title: 'Additional Tools',
+      description: 'Development tools and environments for various projects and platforms.',
+      skills: ['Android Studio', 'VS Code', 'NetBeans', 'PHP', 'Project Management', 'Testing & Debugging']
     }
   ];
 

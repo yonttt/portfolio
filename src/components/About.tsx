@@ -3,19 +3,19 @@ import { Shield, Code2, Globe, GraduationCap } from 'lucide-react';
 const About = () => {
   const features = [
     {
-      icon: Shield,
-      title: 'Cybersecurity',
-      description: 'Focused on protection and analysis, including OSINT techniques and digital threat assessment.'
-    },
-    {
       icon: Code2,
-      title: 'Coding',
+      title: 'Programming',
       description: 'Developing programming skills in various languages and building practical applications.'
     },
     {
       icon: Globe,
       title: 'Website Development',
       description: 'Creating modern, responsive websites and learning web technologies and frameworks.'
+    },
+    {
+      icon: Shield,
+      title: 'Cybersecurity',
+      description: 'Focused on protection and analysis, including OSINT techniques and digital threat assessment.'
     },
     {
       icon: GraduationCap,
@@ -51,12 +51,12 @@ const About = () => {
                 President University, where I'm pursuing a major in Information Technology.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I am passionate about three main areas in technology: cybersecurity, coding, 
-                and website development. I'm constantly learning and exploring these fields 
-                to expand my knowledge and skills in the ever-evolving world of technology.
+                I am actively developing my skills in programming, website development, and cybersecurity. 
+                Through continuous learning and hands-on practice, I'm building expertise in these critical 
+                areas of technology while staying current with industry trends and best practices.
               </p>
               <div className="flex flex-wrap gap-3">
-                {['Cybersecurity', 'Web Development', 'Programming', 'Information Technology'].map((tech) => (
+                {['Programming', 'Web Development', 'Cybersecurity', 'Information Technology'].map((tech) => (
                   <span key={tech} className="px-3 py-1 bg-cyan-400/10 text-cyan-400 rounded-full text-sm">
                     {tech}
                   </span>

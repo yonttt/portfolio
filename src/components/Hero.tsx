@@ -22,7 +22,7 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
-                An aspiring developer with growing knowledge in cybersecurity, coding, and website development.
+                An aspiring developer with growing knowledge in programming, website development, and cybersecurity.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8 items-center justify-center sm:justify-start">
