@@ -11,19 +11,15 @@ const Hero = () => {
       const { clientX, clientY } = e;
       const { innerWidth, innerHeight } = window;
       
-      const xPercent = (clientX / innerWidth - 0.5) * 2;
-      const yPercent = (clientY / innerHeight - 0.5) * 2;
+      const xPercent = Math.abs((clientX / innerWidth - 0.5) * 2);
+      const yPercent = Math.abs((clientY / innerHeight - 0.5) * 2);
       
       const elements = sectionRef.current.querySelectorAll('.interactive-3d');
       elements.forEach((element, index) => {
-        const intensity = (index + 1) * 0.5;
-        const x = xPercent * intensity * 10;
-        const y = yPercent * intensity * 10;
-        const rotateX = yPercent * intensity * 5;
-        const rotateY = xPercent * intensity * 5;
+        const intensity = (index + 1) * 0.1;
+        const scale = 1 + (xPercent + yPercent) * intensity * 0.1;
         
-        (element as HTMLElement).style.transform = 
-          `translate(${x}px, ${y}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        (element as HTMLElement).style.transform = `scale(${scale})`;
       });
     };
 
@@ -35,12 +31,12 @@ const Hero = () => {
     <section ref={sectionRef} id="home" className="min-h-screen relative overflow-hidden">
       {/* Interactive 3D Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-20 h-20 glass rotate-45 opacity-20 float-animation interactive-3d transition-transform duration-300"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 glass rounded-full opacity-30 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-40 left-20 w-24 h-24 glass rotate-12 opacity-25 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 right-10 w-12 h-12 glass rounded-full opacity-20 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute top-60 left-1/2 w-16 h-16 glass rotate-45 opacity-15 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '4s' }}></div>
-        <div className="absolute bottom-60 right-1/3 w-14 h-14 glass rounded-full opacity-25 float-animation interactive-3d transition-transform duration-300" style={{ animationDelay: '5s' }}></div>
+        <div className="absolute top-20 left-10 w-20 h-20 glass rotate-45 opacity-20 float-animation interactive-3d"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 glass rounded-full opacity-30 float-animation interactive-3d" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-40 left-20 w-24 h-24 glass rotate-12 opacity-25 float-animation interactive-3d" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-10 w-12 h-12 glass rounded-full opacity-20 float-animation interactive-3d" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute top-60 left-1/2 w-16 h-16 glass rotate-45 opacity-15 float-animation interactive-3d" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-60 right-1/3 w-14 h-14 glass rounded-full opacity-25 float-animation interactive-3d" style={{ animationDelay: '5s' }}></div>
       </div>
 
       {/* Content */}
