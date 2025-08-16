@@ -107,27 +107,27 @@ const Skills = () => {
             {skillCategories.map((category, index) => {
               const Icon = category.icon;
               return (
-                <div key={index} className="glass-dark-terminal rounded-xl p-6 group flex flex-col border border-cyan-400/20 hover:border-cyan-400/50 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/20">
+                <div key={index} className="glass-dark-terminal rounded-xl p-6 group flex flex-col border border-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/20">
                   <div className="flex-shrink-0 mb-6 flex items-center gap-4">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-md bg-cyan-900/50 border border-cyan-400/30 group-hover:scale-110">
-                       <Icon className="w-6 h-6 text-cyan-400 group-hover:scale-110" />
+                    <div className="w-12 h-12 flex items-center justify-center rounded-md bg-cyan-900/50 border border-cyan-400/30 transition-transform duration-300 group-hover:scale-110">
+                       <Icon className="w-6 h-6 text-cyan-400 transition-transform duration-300 group-hover:scale-110" />
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold text-white group-hover:text-cyan-400">{category.title}</h3>
+                        <h3 className="text-xl font-bold text-white transition-colors duration-300 group-hover:text-cyan-400">{category.title}</h3>
                     </div>
                   </div>
-                  <p className='text-gray-400 mb-6 text-sm group-hover:text-gray-300'>{category.description}</p>
+                  <p className='text-gray-400 mb-6 text-sm transition-colors duration-300 group-hover:text-gray-300'>{category.description}</p>
                   
                   {/* --- Animated Skills List --- */}
                   <div className="flex-grow flex flex-col space-y-2">
                     {category.skills.map((skill, skillIndex) => (
                       <div 
                         key={skillIndex} 
-                        className="fade-in-skill group-hover:translate-x-1" 
+                        className="fade-in-skill transition-transform duration-300 group-hover:translate-x-1" 
                         style={{ animationDelay: `${skillIndex * 100}ms` }}
                       >
-                        <p className="text-gray-300 group-hover:text-white">
-                          <span className="text-cyan-400 mr-2 group-hover:text-cyan-300">[+]</span>{skill}
+                        <p className="text-gray-300 transition-colors duration-300 group-hover:text-white">
+                          <span className="text-cyan-400 mr-2 transition-colors duration-300 group-hover:text-cyan-300">[+]</span>{skill}
                         </p>
                       </div>
                     ))}
