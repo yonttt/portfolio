@@ -22,10 +22,9 @@ const Contact = () => {
   const [feedbackMessage, setFeedbackMessage] = useState('');
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleInteraction = (clientX: number, clientY: number) => {
       if (!sectionRef.current) return;
       
-      const { clientX, clientY } = e;
       const { innerWidth, innerHeight } = window;
       
       const xPercent = Math.abs((clientX / innerWidth - 0.5) * 2);
@@ -40,8 +39,34 @@ const Contact = () => {
       });
     };
 
+    const handleMouseMove = (e: MouseEvent) => {
+      handleInteraction(e.clientX, e.clientY);
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        const touch = e.touches[0];
+        handleInteraction(touch.clientX, touch.clientY);
+      }
+    };
+
+    const handleTouchStart = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        const touch = e.touches[0];
+        handleInteraction(touch.clientX, touch.clientY);
+      }
+    };
+
+    // Add both mouse and touch event listeners
     document.addEventListener('mousemove', handleMouseMove);
-    return () => document.removeEventListener('mousemove', handleMouseMove);
+    document.addEventListener('touchmove', handleTouchMove, { passive: true });
+    document.addEventListener('touchstart', handleTouchStart, { passive: true });
+    
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchstart', handleTouchStart);
+    };
   }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
