@@ -56,15 +56,7 @@ const Skills = () => {
   ];
 
   // --- Style tag for custom animations ---
-  // (It's often better to put this in your global CSS file)
   const styles = `
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
-    .cursor-blink {
-      animation: blink 1s step-end infinite;
-    }
-    
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-10px); }
       to { opacity: 1; transform: translateY(0); }
