@@ -43,7 +43,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-screen">
         <div className="w-full">
           <div className="text-center lg:text-left">
-            <div className="glass-dark rounded-2xl p-8 md:p-12 max-w-4xl mx-auto lg:mx-0 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-500 card-3d hover-lift transform-3d">
+            <div className="glass-dark rounded-2xl p-8 md:p-12 max-w-4xl mx-auto lg:mx-0 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-500 hover:scale-105">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-[slideInFromTop_1s_ease-out]">
                 <span className="text-white">Hi, I'm </span>
                 <span className="text-gradient">Yonathan Marcello</span>
@@ -56,7 +56,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 mb-8 items-center justify-center sm:justify-start animate-[slideInFromRight_1s_ease-out_0.6s_both]">
                 {/* View My Work Button */}
                 <a href="#projects" className="w-full sm:w-auto">
-                    <button className="w-full sm:w-auto px-8 py-4 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-300 transition-all duration-300 btn-glow text-center transform hover:scale-105 card-3d">
+                    <button className="w-full sm:w-auto px-8 py-4 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-300 transition-all duration-300 btn-glow text-center transform hover:scale-105">
                     View My Work</button>
                 </a>
                 {/* Download CV Button */}
@@ -67,7 +67,7 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto"
                 >
-                  <button className="w-full sm:w-auto px-8 py-4 glass border border-cyan-400/30 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition-all duration-300 flex items-center justify-center gap-2 btn-glow text-center transform hover:scale-105 card-3d">
+                  <button className="w-full sm:w-auto px-8 py-4 glass border border-cyan-400/30 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition-all duration-300 flex items-center justify-center gap-2 btn-glow text-center transform hover:scale-105">
                     <Download size={20} />
                     Download CV
                   </button>
@@ -75,13 +75,13 @@ const Hero = () => {
               </div>
               
               <div className="flex gap-6 justify-center lg:justify-start animate-[scaleIn3D_1s_ease-out_0.9s_both]">
-                <a href="https://github.com/yonttt" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125 card-3d">
+                <a href="https://github.com/yonttt" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125">
                   <Github size={24} />
                 </a>
-                <a href="https://www.linkedin.com/in/yonathan-marcello-8392451b3/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125 card-3d">
+                <a href="https://www.linkedin.com/in/yonathan-marcello-8392451b3/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125">
                   <Linkedin size={24} />
                 </a>
-                <a href="#contact" className="text-gray-400 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125 card-3d">
+                <a href="#contact" className="text-gray-400 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125">
                   <Mail size={24} />
                 </a>
               </div>
