@@ -33,7 +33,7 @@ const Skills = () => {
       icon: Code,
       title: 'Programming',
       description: 'Development environments, programming languages, and software development tools.',
-      skills: ['Python', 'Java', 'TypeScript', 'Node.js', 'Git/GitHub']
+      skills: ['Python', 'Java', 'JavaScript', 'TypeScript', 'Node.js', 'Git/GitHub']
     },
     {
       icon: Monitor,
