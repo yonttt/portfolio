@@ -33,7 +33,7 @@ const Skills = () => {
       icon: Code,
       title: 'Programming',
       description: 'Development environments, programming languages, and software development tools.',
-      skills: ['Python', 'Java', 'JavaScript', 'TypeScript', 'Node.js', 'Git/GitHub']
+      skills: ['Python', 'Java', 'TypeScript', 'Node.js', 'Git/GitHub']
     },
     {
       icon: Monitor,
@@ -51,7 +51,7 @@ const Skills = () => {
       icon: Server,
       title: 'Additional Tools',
       description: 'Development tools and environments for various projects and platforms.',
-      skills: ['Android Studio', 'VS Code', 'NetBeans', 'PHP', 'Project Management', 'Testing & Debugging']
+      skills: ['Android Studio', 'VS Code', 'NetBeans', 'PHP']
     }
   ];
 
