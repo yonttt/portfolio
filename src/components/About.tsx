@@ -75,7 +75,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="glass-dark rounded-2xl p-8 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-500 card-3d hover-lift transform-3d">
+            <div className="glass-dark rounded-2xl p-8 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-500 hover:scale-105">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 Hi! My name is Yonathan Marcello S. Tambani, and I'm currently a student at 
                 President University, where I'm pursuing a major in Information Technology.
