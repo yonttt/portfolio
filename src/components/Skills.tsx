@@ -73,19 +73,6 @@ const Skills = () => {
       animation: fadeIn 0.5s ease-out forwards;
       opacity: 0; /* Start hidden */
     }
-
-    /* Subtle glitch effect on group hover */
-    .group:hover .glitch-target {
-      animation: glitch 0.3s cubic-bezier(.25,.46,.45,.94) both infinite;
-    }
-    @keyframes glitch{
-      0%{ transform: translate(0); }
-      20%{ transform: translate(-2px, 2px); }
-      40%{ transform: translate(-2px, -2px); }
-      60%{ transform: translate(2px, 2px); }
-      80%{ transform: translate(2px, -2px); }
-      100%{ transform: translate(0); }
-    }
   `;
 
   return (
@@ -123,7 +110,7 @@ const Skills = () => {
                 <div key={index} className="glass-dark-terminal rounded-xl p-6 group flex flex-col border border-cyan-400/20 hover:border-cyan-400/50 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/20">
                   <div className="flex-shrink-0 mb-6 flex items-center gap-4">
                     <div className="w-12 h-12 flex items-center justify-center rounded-md bg-cyan-900/50 border border-cyan-400/30 group-hover:scale-110">
-                       <Icon className="w-6 h-6 text-cyan-400 glitch-target group-hover:scale-110" />
+                       <Icon className="w-6 h-6 text-cyan-400 group-hover:scale-110" />
                     </div>
                     <div>
                         <h3 className="text-xl font-bold text-white group-hover:text-cyan-400">{category.title}</h3>
