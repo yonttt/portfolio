@@ -59,7 +59,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'President University Website',
+      title: 'President University Website Replication',
       description: 'A demo university website project featuring three main sections: student management, class schedules, and subject information. Built as a learning project to practice web development fundamentals.',
       image: presidentUniversityImg,
       tech: ['PHP', 'CSS', 'JavaScript'],
